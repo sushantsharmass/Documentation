@@ -2,6 +2,9 @@ body{
     margin: 20px;
 }
 
+
+
+
 .wrapper{
     display: grid;
     /* grid-template-columns: 1fr 2fr 1fr; */
@@ -39,9 +42,90 @@ body{
 
 }
 
-.project{
+.social{
     background-color: #ddd;
     padding: 1rem;
-    grid-column: -4/-1;
+    grid-column: -4/-3;
+    
+    border-radius: 40px;
+}
+
+
+.project{
+    background-color: #eee;
+    padding: 1rem;
+    grid-column: -3/-1;
+    grid-row: 2/4;
+    border-radius: 40px;
+
+}
+
+.design{
+    background-color: #ddd;
+    padding: 1rem;
+    grid-row: 3/4;
+    grid-column: -5/-3;
+    border-radius: 40px;
+}
+
+.api{
+    background-color: #eee;
+    padding: 1rem;
+    grid-column: -5/-3;
+    grid-row: 4/6;
+    border-radius: 40px;
+
+}
+
+.system{
+    background-color: #ddd;
+    padding: 1rem;
+    grid-column: -3/-1;
+    grid-row: 4/6;
+    border-radius: 40px;
+}
+
+.monitor{
+    background-color: #eee;
+    padding: 1rem;
+    grid-column: -5/-1;
+    grid-row: 6/8;
+    border-radius: 40px;
+
+}
+
+.deploy{
+    background-color: #ddd;
+    padding: 1rem;
+    grid-column: -5/-3;
+    border-radius: 40px;
+}
+
+.branching{
+    background-color: #eee;
+    padding: 1rem;
+    grid-column: -3/-1;
+    border-radius: 40px;
+}
+
+.hire{
+    background-color: #ddd;
+    padding: 1rem;
+    grid-column: -5/-3;
+    grid-row: 9/11;
+    border-radius: 40px;
+}
+
+.feedback{
+    background-color: #eee;
+    padding: 1rem;
+    grid-column: -3/-1;
+    border-radius: 40px;
+}
+
+.thankyou{
+    background-color: #ddd;
+    padding: 1rem;
+    grid-column: -3/-1;
     border-radius: 40px;
 }
