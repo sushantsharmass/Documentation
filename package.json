@@ -1,0 +1,16 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "This is the documentation website for the projects made by sushant sharma.This Website includes system design component,API Design,Brnaching strategy, Deployment Strategy & Tech stack",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "keywords": [],
+  "author": "Sushant Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
