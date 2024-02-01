@@ -1,7 +1,18 @@
 body{
-    margin: 20px;
+  margin: 0px;
+  padding: 0px; 
+  /* overflow: auto;  */
 }
 
+.scrolltracker{
+    height: .7rem;
+    background-color: #000000;;
+    inset: 0 0 auto ;
+    position: fixed;
+    transform-origin: left;
+
+}
+ 
 ::-webkit-scrollbar{
     width: 1.6rem;
 }
@@ -28,6 +39,7 @@ body{
     /* grid-template-columns: 1fr 2fr 1fr; */
     grid-template-columns: repeat(1 , 1fr 1fr 1fr 1fr);
     column-gap: 1.7rem;
+    margin: 20px;
     row-gap: 1.5rem;
     grid-auto-rows: minmax(300px, auto);
   
