@@ -56,7 +56,7 @@ body{
 .wrapper{
     display: grid;
     /* grid-template-columns: 1fr 2fr 1fr; */
-    grid-template-columns: repeat(1 , 1fr 1fr 1fr 1fr);;
+    grid-template-columns: repeat(4 , 1fr);
     column-gap: 1.7rem;
     margin: 20px;
     row-gap: 1.5rem;
@@ -218,15 +218,138 @@ body{
 }
 
 
-@media screen and (max-width: 1900px){
-   
+@media (max-width: 990px){
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+
+        .dashboard{
+            grid-column: 0/1;
+            grid-row: 1/3;
+        }
+        .introduction{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .social{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .medium{
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+        .design{
+            grid-column: 1/3;
+            grid-row: 9/10;
+        }
+        .project{
+            grid-column: 1/3;
+            grid-row: 4/6;
+        }
+        .api{
+            grid-column: 1/3;
+            grid-row: 6/8;
+        }
+        .system{
+            grid-column: 1/3;
+            grid-row: 8/10;
+        }
+        .monitor{
+            grid-column: 1/3;
+            grid-row: 10/12;
+        }
+        .deploy{
+            grid-column: 1/2;
+            grid-row: 12/13;
+        }
+        .branching{
+            grid-column: 2/3;
+            grid-row: 12/13;
+        }
+        .feedback{
+            grid-column: 1/2;
+            grid-row: 13/14;
+        }
+        .thankyou{
+            grid-column: 2/3;
+            grid-row: 13/14;
+        }
+        .hire{
+            grid-column: 1/3;
+            grid-row: 14/16;
+        }
+    }
+
+}
+
+@media (max-width: 770px){
 .wrapper{
-    grid-template-columns: repeat(1,0.4fr,0.5fr);
-    margin: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px;
+    .dashboard{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .introduction{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .medium{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    }
+    .project{
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+    .api{
+        grid-column: 1/2;
+        grid-row: 6/8;
+    }
+    .system{
+        grid-column: 1/2;
+        grid-row: 8/10;
+    }
+    .monitor{
+        grid-column: 1/2;
+        grid-row: 10/12;
+    }
+    .design{
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+    .deploy{
+        grid-column: 1/2;
+        grid-row: 13/14;
+    }
+    /*brnaching feedback thankyou hire*/
+
+    .branching{
+        grid-column: 1/2;
+        grid-row: 14/15;
+    }
+    .feedback{
+        grid-column: 1/2;
+        grid-row: 15/16;
+    }
+    .social{
+        grid-column: 1/2;
+        grid-row: 16/17;
+    }
+    .thankyou{
+        grid-column: 1/2;
+        grid-row: 17/18;
+    }
+    .hire{
+        grid-column: 1/2;
+        grid-row: 18/20;
+    }
+
+}
 }
 
-.dashboard{
-    
+@media (max-width: 479px){
+.wrapper{
+    width: 90%;
 }
-
 }
