@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/document.css">
+    <link rel="stylesheet" href="document.css">
     <script src="scroll.js" type="module"></script>
+    
 </head>
 <body>
+
     <div class="scrolltracker"></div>
     <div class="wrapper">
         <div class="dashboard">
@@ -18,7 +20,12 @@
         </div>
         
         <div class="introduction">
-            Introduction
+            <h3>Introduction</h3>
+            <button type="button" class="night" id="nightmode">
+                <span class="button_icon">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </span>
+            </button>
         </div>
         <div class="social">
             <div class="containersocial">
@@ -88,5 +95,10 @@
             Thankyou Remark
         </div>
     </div>
+
+    <script  src="darkmode.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
 </body>
 </html>
