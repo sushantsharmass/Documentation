@@ -7,10 +7,12 @@ body {
 :root{
     --primary-color:  #eee;
     --primary-text:   #000000;
+    --primary-background: white;
 }
 
 .darkmode{
   --primary-color: #040406;
+  --primary-background: #292929;
 }
 
 
@@ -50,6 +52,7 @@ body {
 
 .wrapper {
   display: grid;
+  background-color: var(--primary-background);
   /* grid-template-columns: 1fr 2fr 1fr; */
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.7rem;
@@ -97,7 +100,7 @@ body {
   grid-column: -4/-3;
   /* filter: drop-shadow(16px 7px 10px #d3d3d3); */
   border-radius: 40px;
-  filter: drop-shadow(9px 48px 27px #d3d3d3);
+  /* filter: drop-shadow(9px 48px 27px #d3d3d3); */
 }
 
 .containersocial {
