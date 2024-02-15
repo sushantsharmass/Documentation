@@ -4,6 +4,10 @@ body {
   /* overflow: auto;  */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root{
     --primary-color:  #eee;
     --primary-text:   #000000;
@@ -74,11 +78,19 @@ body {
 
 .dashboard {
   background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: start;
   padding: 1rem;
   grid-template-columns: 1/2;
   grid-row: 1/3;
   border-radius: 40px;
   /* width: 400px; */
+}
+
+.dashcon{
+  width: 300px;
+  height: 300px;
 }
 
 .medium {
@@ -90,6 +102,7 @@ body {
   grid-column: 2/4;
   grid-auto-rows: 300px;
   border-radius: 40px;
+  scroll-behavior: smooth;
   /* filter: drop-shadow(16px 7px 10px #d3d3d3); */
 }
 
@@ -232,6 +245,7 @@ height: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-behavior: smooth;
   /* filter: drop-shadow(16px 7px 10px #d3d3d3); */
 }
 
@@ -341,7 +355,7 @@ height: 300px; */
   }
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
-    margin: 20px;
+    margin: 2px;
     /*brnaching feedback thankyou hire*/
   }
   .wrapper .dashboard {
@@ -403,12 +417,16 @@ height: 300px; */
 }
 @media (max-width: 479px) {
   .circle{
-    opacity: 2;
+    height: 0;
+    width: 0;
+    border-radius:0;
+    opacity: 20;
+    background-color: #000000;
     position: absolute;
-    top: 10;
-    left: 10;
+    top: 0;
+    left: 0;
   }
   .wrapper {
-    width: 90%;
+    width: 100%;
   }
 }
