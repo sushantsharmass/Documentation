@@ -26,6 +26,7 @@ body {
   height: 24px;
   width: 24px;
   border-radius: 24px;
+  opacity: 2;
   background-color: #000000;
   position: absolute;
   top: 0;
@@ -257,6 +258,16 @@ height: 300px; */
 }
 
 @media (max-width: 990px) {
+  .circle{
+    height: 0;
+    width: 0;
+    border-radius:0;
+    opacity: 0;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -318,6 +329,16 @@ height: 300px; */
   }
 }
 @media (max-width: 770px) {
+  .circle{
+    height: 0;
+    width: 0;
+    border-radius:0;
+    opacity: 0;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
     margin: 20px;
@@ -381,6 +402,12 @@ height: 300px; */
   }
 }
 @media (max-width: 479px) {
+  .circle{
+    opacity: 2;
+    position: absolute;
+    top: 10;
+    left: 10;
+  }
   .wrapper {
     width: 90%;
   }
